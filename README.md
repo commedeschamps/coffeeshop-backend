@@ -497,39 +497,32 @@ src/main/java/com/coffeeshop/shop/
 
 ---
 
-## 🔧 Configuration
+## 📚 Documentation
 
-### CORS
-Edit `CoffeeShopController.java`:
-```java
-@CrossOrigin(origins = "http://localhost:5173")
-```
+- 🐳 **[Docker Guide](DOCKER.md)** - Complete deployment and troubleshooting guide
+- 📜 **[License](LICENSE)** - MIT License details
 
-### Port
-Edit `application.properties`:
-```properties
-server.port=8080
-```
+### Quick Tips
 
-### Images
-Change product images in `CoffeeShopService.java`:
+**Change Product Images:**
+Edit `CoffeeShopService.java` and replace image URLs:
 ```java
 "https://images.unsplash.com/photo-YOUR-ID?w=400"
 // or use local images:
 "/images/espresso.jpg"
 ```
 
-See [HOW_TO_CHANGE_IMAGES.md](HOW_TO_CHANGE_IMAGES.md)
+**Enable CORS:**
+Already configured in `CoffeeShopController.java`:
+```java
+@CrossOrigin(origins = "http://localhost:5173")
+```
 
----
-
-## 📚 Documentation
-
-- 📖 [Quick Start Guide](QUICK_START.md) - Get running in 5 minutes
-- 🏗️ [Design Patterns Explained](FIXED_LOGIC.md) - Deep dive into patterns
-- 🐳 [Docker Guide](DOCKER.md) - Deployment and troubleshooting
-- 🖼️ [Image Management](HOW_TO_CHANGE_IMAGES.md) - Customize product images
-- 🎨 [UI Documentation](README_NEW_UI.md) - Frontend features
+**Change Server Port:**
+Edit `src/main/resources/application.properties`:
+```properties
+server.port=8080
+```
 
 ---
 
