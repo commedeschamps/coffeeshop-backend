@@ -1,7 +1,35 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend (не нужно в бэкенд образе)
 coffeeshop-ui/
 node_modules/
-dist/
+
+# Git
 .git/
 .gitignore
-README*
+
+# Documentation
 *.md
+LICENSE
+
+# Tests
+src/test/
+
